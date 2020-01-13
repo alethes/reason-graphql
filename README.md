@@ -56,7 +56,7 @@ This works for as many arguments as you like, it infers nullability for you as w
   ~args=Args.[arg("id", nonnull(string)), arg("age", int)] 
   ~resolve=(_ctx, _parent, id,     age) => {
                            ^^      ^^^ 
-                           string  option(int) because age is not non-null
+                           string  option(int) because age is nullable
   }
 ```
  
